@@ -87,14 +87,14 @@ TEST_CASE("Test ComplexVariable") { //23
     CHECK(solve(5*(y^2) +8*y + 13 - 5 == 0) == (complex<double>(-4/5,(2*sqrt(6))/5)) || (complex<double>(-4/5,(-2*sqrt(6))/5)));
     CHECK(solve(5*(y^2) +8*y + 13 - 5 == 2) == (complex<double>(-4/5,(sqrt(14))/5)) || (complex<double>(-4/5,(-sqrt(14))/5)));
     CHECK(solve(5*(y^2) +y + 2 == 0) == (complex<double>(-1/10,(sqrt(39))/20)) || (complex<double>(-1/10,(-sqrt(39))/20)));
-    CHECK(solve((y^2) == -49) == (complex<double>(0.0,7.0)) || (complex<double>(0.0,-7.0));
-    CHECK(solve((y^2) == -25) == (complex<double>(0.0,5.0)) || (complex<double>(0.0,-5.0));
-    CHECK(solve((y^2) == -36) == (complex<double>(0.0,6.0)) || (complex<double>(0.0,-6.0));
+    CHECK(solve((y^2) == -49) == (complex<double>(0.0,7.0)) || (complex<double>(0.0,-7.0)));
+    CHECK(solve((y^2) == -25) == (complex<double>(0.0,5.0)) || (complex<double>(0.0,-5.0)));
+    CHECK(solve((y^2) == -36) == (complex<double>(0.0,6.0)) || (complex<double>(0.0,-6.0)));
     CHECK_THROWS(solve(y^5 == 5));// error
     CHECK_THROWS(solve(y^-5 == 5));// error
     CHECK_THROWS(solve(y^8 == 5));// error
-    CHECK(solve((y^2)-4*y+20== 0) == (complex<double>(2.0,4.0)) || (complex<double>(2.0,-4.0));
-    CHECK(solve(10*(y^2)+2*y+1== 0) == (complex<double>(-0.1,0.3)) || (complex<double>(-0.1,-0.3));
+    CHECK(solve((y^2)-4*y+20== 0) == (complex<double>(2.0,4.0)) || (complex<double>(2.0,-4.0)));
+    CHECK(solve(10*(y^2)+2*y+1== 0) == (complex<double>(-0.1,0.3)) || (complex<double>(-0.1,-0.3)));
     CHECK_THROWS(solve((y^8)/0 == 5));// error
     CHECK_THROWS(solve((y^3)/0 == 5));// error
 

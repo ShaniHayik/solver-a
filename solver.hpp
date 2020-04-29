@@ -2,9 +2,6 @@
 #include <complex>
 using namespace std;
 
-
-
-
 namespace solver{
     
 class RealVariable{
@@ -52,6 +49,8 @@ class RealVariable{
     friend RealVariable operator==(const RealVariable& x, const RealVariable& y);
     friend RealVariable operator==(const RealVariable& X, const double y);
     friend RealVariable operator==(const double y, const RealVariable& X);
+
+    //bool operator! () const;
     };
 
     class ComplexVariable{
@@ -104,6 +103,7 @@ class RealVariable{
     };
 
     double solve (const RealVariable& x);
+    //double solve(const bool equation);
     complex<double> solve (const ComplexVariable & x);
 
 }

@@ -209,6 +209,22 @@ complex<double> solve (const ComplexVariable & x){
     //return (-b - sqrt(b * b - 4 * a * c)) / (2 * a);
 
 }
+
+//change
+//    double solve(const bool equation) {
+//        if(!equation) {
+//            throw invalid_argument("mathematical error, false phrase");
+//        }
+//        else {
+//            return 0;
+//        }
+//    }
+//
+//    bool RealVariable::operator! () const {
+//        return this->a == 0 && this->b == 0 && this->c == 0;
+//    }
+
+
 }
 
 
